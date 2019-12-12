@@ -173,6 +173,7 @@ nav {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  border-bottom: 1px dashed gray;
 }
 nav div {
   width: 33%;
