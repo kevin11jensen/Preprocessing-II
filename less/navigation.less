@@ -2,13 +2,20 @@
 nav {
     .displayFlex(row, space-around, center);
     border-bottom: 1px dashed gray;
+    @media (max-width: 500px) {
+        .displayFlex(column, center, space-around);
+    }
         div {
             width: 33%;
-            .displayFlex(row, space-between, center);
+            .displayFlex(row, space-around, center);
+            @media @mobile {
+                width: 99%;
+            }
                 a {
-                    .displayFlex(row, space-between, center);
+                    
                     text-decoration: none;
                     color: black;
+            
+                    }
                 }
         }
-}
